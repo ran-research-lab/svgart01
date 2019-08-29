@@ -28,7 +28,7 @@ Else if the region is big enough to split vertically, a vertical split is select
   Use recursion to split the region into 2 smaller regions using a horizontal line with the split 
   location chosen randomly 
 Else: 
-  Fill the current region (randomly,
+  Fill the current region (randomly, or elss......
 */
 
 std::vector<svg::Fill> allColors {Color::Red, Color::White, Color::Blue, Color::Yellow, Color::Purple,
