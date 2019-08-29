@@ -6,7 +6,30 @@
 #include "simple_svg_1.0.0.hpp"
 using namespace svg;
 
-// Demo page shows sample usage of the Simple SVG library.
+/*
+If the region is wider than half the initial canvas size and the region is taller than half the initial canvas 
+height: 
+  Use recursion to split the region into 4 smaller regions (a vertical split and a horizontal split) with 
+  the split location chosen randomly 
+Else if the region is wider than half the initial canvas size: 
+  Use recursion to split the region into 2 smaller regions using a vertical line with the split location 
+  chosen randomly 
+Else if the region is taller than half the initial canvas size:
+  Use recursion to split the region into 2 smaller regions using a horizontal line with the split 
+  location chosen randomly 
+Else if the region is big enough to split both horizontally and vertically, and both a horizontal and vertical 
+split are randomly selected: 
+  Use recursion to split the region into 4 smaller regions (a vertical split and a horizontal split) with 
+  the split location chosen randomly 
+Else if the region is big enough to split horizontally, and a horizontal split is selected: 
+  Use recursion to split the region into 2 smaller regions using a vertical line with the split location 
+  chosen randomly 
+Else if the region is big enough to split vertically, a vertical split is selected: 
+  Use recursion to split the region into 2 smaller regions using a horizontal line with the split 
+  location chosen randomly 
+Else: 
+  Fill the current region (randomly,
+*/
 
 std::vector<svg::Fill> allColors {Color::Red, Color::White, Color::Blue, Color::Yellow, Color::Purple,
 Color::Black, Color::Brown, Color::Orange, Color::Silver, Color::Green};
